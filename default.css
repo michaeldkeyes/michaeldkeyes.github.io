@@ -63,7 +63,8 @@ h5 {
   font-size: 2rem;
 }
 h6,
-p {
+p,
+a {
   font-size: 1.6rem;
 }
 
@@ -300,12 +301,50 @@ img {
 .social-links {
   align-content: center;
   display: grid;
-  font-size: 1.6rem;
   text-align: center;
 }
 
 #social-img {
+  height: 350px;
+  object-fit: cover;
   width: 100%;
+}
+
+.post-wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 320px);
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.post {
+  border: 1px solid var(--borderColor);
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.thumbnail {
+  display: block;
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.post-preview {
+  background-color: #fff;
+  padding: 15px;
+}
+
+.post-title {
+  color: black;
+  margin: 0;
+}
+
+.post-intro {
+  color: #4b5156;
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 1200px) {
