@@ -14,8 +14,6 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   font-size: 1em;
   font-family: inherit;
 }
@@ -23,6 +21,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -176,10 +176,6 @@ img {
   padding-top: 50px;
 }
 
-.left-column * {
-  margin-bottom: 10px;
-}
-
 #profile-pic {
   border: 2px solid var(--borderColor);
   display: block;
@@ -284,6 +280,32 @@ img {
 #corner-bl {
   bottom: -5px;
   left: -5px;
+}
+
+.about-wrapper {
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+#skills {
+  background-color: var(--previewShadow);
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-evenly;
+}
+
+.social-links {
+  align-content: center;
+  display: grid;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+#social-img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
