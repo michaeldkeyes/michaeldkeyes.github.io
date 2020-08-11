@@ -11,6 +11,8 @@
 
   --previewBg: rgb(251, 249, 243, 0.8);
   --previewShadow: #f0ead6;
+
+  --buttonColor: black;
 }
 
 * {
@@ -23,6 +25,10 @@ html {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
+}
+
+body * {
+  transition: 0.3s;
 }
 
 h1,
@@ -137,6 +143,11 @@ img {
   margin: 0;
   padding: 10px;
 }
+
+#navigation a {
+  color: var(--mainText);
+}
+
 #navigation li {
   display: inline-block;
   margin-left: 5px;
@@ -347,6 +358,47 @@ img {
   font-size: 1.4rem;
 }
 
+#contact-form {
+  background-color: var(--mainColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 15px;
+  max-width: 600px;
+}
+
+#contact-form label {
+  font-size: 1.6rem;
+  line-height: 4.3rem;
+}
+
+#contact-form textarea {
+  font-size: 1.4rem;
+  min-height: 100px;
+}
+
+.input-field {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+#submit-btn {
+  background-color: var(--buttonColor);
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .main-container {
     width: 95%;
@@ -369,6 +421,9 @@ img {
 
 @media screen and (max-width: 450px) {
   #preview {
+    width: 200px;
+  }
+  #preview-shadow {
     width: 250px;
   }
 }
