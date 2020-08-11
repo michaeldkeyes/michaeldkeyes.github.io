@@ -1,0 +1,43 @@
+@import 'nav';
+@import 'leftColumn';
+@import 'rightColumn';
+
+.s1 {
+  background-color: $mainColor;
+  border-bottom: 1px solid $borderColor;
+  overflow: auto;
+}
+
+.s2 {
+  background-color: $secondaryColor;
+  border-bottom: 1px solid $borderColor;
+  overflow: auto;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.greeting-wrapper {
+  display: grid;
+  text-align: center;
+  align-content: center;
+  min-height: 10rem;
+}
+
+.intro-wrapper {
+  background-color: $secondaryColor;
+  border: 1px solid $borderColor;
+  border-radius: 5px 5px 0 0;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'nav-wrapper nav-wrapper'
+    'left-column right-column';
+}

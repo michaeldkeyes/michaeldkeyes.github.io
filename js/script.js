@@ -17,7 +17,7 @@ for (let i = 0; i < themeDots.length; i++) {
 
 function setTheme(mode) {
   if (mode === 'light') {
-    document.querySelector('#theme-style').href = 'css/default.css';
+    document.querySelector('#theme-style').href = 'css/light.css';
   }
   if (mode === 'blue') {
     document.querySelector('#theme-style').href = 'css/blue.css';

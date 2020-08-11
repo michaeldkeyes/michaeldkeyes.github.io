@@ -1,0 +1,52 @@
+.right-column {
+  align-content: center;
+  display: grid;
+  grid-area: right-column;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+#preview-shadow {
+  background-color: $previewShadow;
+  height: 180px;
+  padding-left: 30px;
+  padding-top: 30px;
+  width: 300px;
+}
+
+#preview {
+  background-color: $previewBg;
+  border: 1.5px solid #17a2b8;
+  padding: 15px;
+  position: relative;
+  width: 300px;
+}
+
+.corner {
+  background-color: #fff;
+  border: 1.5px solid #17a2b8;
+  border-radius: 50%;
+  height: 7px;
+  position: absolute;
+  width: 7px;
+}
+
+#corner-tl {
+  top: -5px;
+  left: -5px;
+}
+
+#corner-tr {
+  top: -5px;
+  right: -5px;
+}
+
+#corner-br {
+  bottom: -5px;
+  right: -5px;
+}
+
+#corner-bl {
+  bottom: -5px;
+  left: -5px;
+}

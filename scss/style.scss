@@ -1,0 +1,107 @@
+@import 'intro/intro';
+@import 'about/about';
+@import 'project/project';
+@import 'contact/contact';
+
+* {
+  font-size: 1em;
+  font-family: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  transition: 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: $mainText;
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: $secondaryText;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  font-size: 5.6rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6,
+p,
+a {
+  font-size: 1.6rem;
+}
+
+a {
+  color: #17a2b8;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'nav-wrapper'
+      'left-column'
+      'right-column';
+  }
+
+  .right-column {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #preview {
+    width: 200px;
+  }
+  #preview-shadow {
+    width: 250px;
+  }
+}

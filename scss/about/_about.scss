@@ -1,0 +1,26 @@
+.about-wrapper {
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+#skills {
+  background-color: $previewShadow;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-evenly;
+}
+
+.social-links {
+  align-content: center;
+  display: grid;
+  text-align: center;
+}
+
+#social-img {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
