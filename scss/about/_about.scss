@@ -1,9 +1,14 @@
 .about-wrapper {
-  display: grid;
-  gap: 100px;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding-bottom: 50px;
   padding-top: 50px;
+
+  h4,
+  p {
+    text-align: center;
+  }
 }
 
 #skills {
@@ -17,6 +22,15 @@
   align-content: center;
   display: grid;
   text-align: center;
+
+  div {
+    display: flex;
+    justify-content: space-around;
+
+    i {
+      font-size: 4rem;
+    }
+  }
 }
 
 #social-img {

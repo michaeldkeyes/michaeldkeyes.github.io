@@ -4,17 +4,10 @@
   padding-top: 50px;
 }
 
-#profile-pic {
-  border: 2px solid $borderColor;
-  display: block;
-  height: 200px;
-  margin: 0 auto;
-  width: 200px;
-  object-fit: cover;
-}
-
 #theme-options-wrapper {
+  align-items: center;
   display: flex;
+  height: 50px;
   justify-content: center;
 }
 

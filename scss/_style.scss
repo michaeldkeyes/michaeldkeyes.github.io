@@ -1,7 +1,6 @@
 @import 'intro/intro';
 @import 'about/about';
 @import 'project/project';
-@import 'contact/contact';
 
 * {
   font-size: 1em;
@@ -65,6 +64,10 @@ a {
 a {
   color: #17a2b8;
   text-decoration: none;
+
+  i {
+    font-size: 3rem;
+  }
 }
 
 ol,
@@ -80,28 +83,5 @@ img {
 @media screen and (max-width: 1200px) {
   .main-container {
     width: 95%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .intro-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'nav-wrapper'
-      'left-column'
-      'right-column';
-  }
-
-  .right-column {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #preview {
-    width: 200px;
-  }
-  #preview-shadow {
-    width: 250px;
   }
 }

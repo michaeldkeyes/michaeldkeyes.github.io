@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link id="theme-style" rel="stylesheet" href="" />
   </head>
   <body>
@@ -19,94 +20,56 @@
 
         <div class="intro-wrapper">
           <div class="nav-wrapper">
-            <div class="dots-wrapper">
-              <div id="dot-1" class="browser-dot"></div>
-              <div id="dot-2" class="browser-dot"></div>
-              <div id="dot-3" class="browser-dot"></div>
-            </div>
-
-            <ul id="navigation">
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="left-column">
-            <img id="profile-pic" src="images/tux.jpg" alt="tux the penguin" />
-            <h5 style="text-align: center;">
-              Personalize Theme
-            </h5>
             <div id="theme-options-wrapper">
               <div data-mode="light" id="light-mode" class="theme-dot"></div>
               <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
               <div data-mode="green" id="green-mode" class="theme-dot"></div>
               <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
-            <p id="settings-note">
-              *Theme settings will be saved for <br />
-              your next visit
-            </p>
           </div>
-          <div class="right-column">
-            <div id="preview-shadow">
-              <div id="preview">
-                <div id="corner-tl" class="corner"></div>
-                <div id="corner-tr" class="corner"></div>
-                <h3>What I do</h3>
-                <p>I make web apps</p>
-                <div id="corner-br" class="corner"></div>
-                <div id="corner-bl" class="corner"></div>
+          <div class="about-wrapper">
+            <div>
+              <h4>About me</h4>
+              <p>I love building new projects and improving my skills</p>
+              <p>I get better everyday</p>
+              <hr />
+  
+              <h4>Skills</h4>
+  
+              <p>
+                Fullstack developer with primary focus on Express + Vue:
+                <a target="_blank" href="resume.pdf">Download Resume</a>
+              </p>
+  
+              <div id="skills">
+                <ul>
+                  <li>Python</li>
+                  <li>Express</li>
+                  <li>Postgres</li>
+                  <li>MongoDB</li>
+                  <li>APIs</li>
+                </ul>
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>Javascript</li>
+                  <li>Vue</li>
+                  <li>Sass</li>
+                  <li>Linux</li>
+                </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="s2">
-      <div class="main-container">
-        <div class="about-wrapper">
-          <div class="about-me">
-            <h4>More about me</h4>
-            <p>I love building new projects and improving my skills</p>
-            <p>I get better everyday</p>
-            <hr />
-
-            <h4>Skills</h4>
-
-            <p>
-              Fullstack developer with primary focus on Express + Vue:
-              <a target="_blank" href="resume.pdf">Download Resume</a>
-            </p>
-
-            <div id="skills">
-              <ul>
-                <li>Python</li>
-                <li>Express</li>
-                <li>Postgres</li>
-                <li>MongoDB</li>
-                <li>APIs</li>
-              </ul>
-              <ul>
-                <li>HTML/CSS</li>
-                <li>Javascript</li>
-                <li>Vue</li>
-                <li>Sass</li>
-                <li>Linux</li>
-              </ul>
+            <div class="social-links">
+              <h3>LinkedIn and GitHub</h3>
+              <div>
+                <a target="_blank" href="https://www.linkedin.com/in/michael-keyes-8203a51b2/">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a target="_blank" href="https://github.com/michaeldkeyes">
+                  <i class="fab fa-github"></i>
+                </a>
+            </div>
             </div>
           </div>
-          <div class="social-links">
-            <img id="social-img" src="images/tux.jpg" alt="" />
-            <h3>LinkedIn and GitHub</h3>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/michael-keyes-8203a51b2/"
-              >LinkedIn</a
-            >
-            <a target="_blank" href="https://github.com/michaeldkeyes"
-              >GitHub</a
-            >
-          </div>
-        </div>
       </div>
     </section>
 
@@ -120,8 +83,10 @@
               <div class="project-preview">
                 <h6 class="project-title">Post Title</h6>
                 <p class="project-intro">This is a sentence. Some more text.</p>
-                <a href="#">Link to project</a>
-                <a href="#">GitHub</a>
+                <div class="project-link">
+                  <a href="#">Link to project</a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -131,8 +96,10 @@
               <div class="project-preview">
                 <h6 class="project-title">Post Title</h6>
                 <p class="project-intro">This is a sentence. Some more text.</p>
-                <a href="#">Link to project</a>
-                <a href="#">GitHub</a>
+                <div class="project-link">
+                  <a href="#">Link to project</a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -142,33 +109,54 @@
               <div class="project-preview">
                 <h6 class="project-title">Post Title</h6>
                 <p class="project-intro">This is a sentence. Some more text.</p>
-                <a href="#">Link to project</a>
-                <a href="#">GitHub</a>
+                <div class="project-link">
+                  <a href="#">Link to project</a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
               </div>
             </div>
           </div>
+          <div>
+            <div class="project">
+              <img class="thumbnail" src="images/tux.jpg" alt="" />
+              <div class="project-preview">
+                <h6 class="project-title">Post Title</h6>
+                <p class="project-intro">This is a sentence. Some more text.</p>
+                <div class="project-link">
+                  <a href="#">Link to project</a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="project">
+              <img class="thumbnail" src="images/tux.jpg" alt="" />
+              <div class="project-preview">
+                <h6 class="project-title">Post Title</h6>
+                <p class="project-intro">This is a sentence. Some more text.</p>
+                <div class="project-link">
+                  <a href="#">Link to project</a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="project">
+              <img class="thumbnail" src="images/tux.jpg" alt="" />
+              <div class="project-preview">
+                <h6 class="project-title">Post Title</h6>
+                <p class="project-intro">This is a sentence. Some more text.</p>
+                <div class="project-link">
+                  <a href="#">Link to project</a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-    </section>
-
-    <section class="s2">
-      <div class="main-container">
-        <h3 style="text-align: center;">Get in touch</h3>
-        <form id="contact-form">
-          <label>Name</label>
-          <input class="input-field" type="text" name="name" />
-
-          <label>Subject</label>
-          <input class="input-field" type="text" name="subject" />
-
-          <label>Email</label>
-          <input class="input-field" type="text" name="email" />
-
-          <label>Message</label>
-          <textarea name="message" class="input-field"></textarea>
-
-          <input id="submit-btn" type="submit" value="Send" />
-        </form>
       </div>
     </section>
 
