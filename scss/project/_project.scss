@@ -14,9 +14,13 @@
 }
 
 .thumbnail {
-  display: block;
   height: 180px;
   object-fit: cover;
+  width: 100%;
+}
+
+.firenote-thumbnail {
+  height: 180px;
   width: 100%;
 }
 
