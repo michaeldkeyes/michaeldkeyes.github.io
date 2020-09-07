@@ -1,6 +1,6 @@
-@import 'nav';
-@import 'leftColumn';
-@import 'rightColumn';
+@import "nav";
+@import "leftColumn";
+@import "rightColumn";
 
 .s1 {
   background-color: $mainColor;
@@ -24,6 +24,7 @@
   text-align: center;
   align-content: center;
   min-height: 10rem;
+  margin: 2rem 0;
 }
 
 .intro-wrapper {

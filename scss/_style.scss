@@ -1,17 +1,17 @@
-@import 'intro/intro';
-@import 'about/about';
-@import 'project/project';
+@import "intro/intro";
+@import "about/about";
+@import "project/project";
 
 * {
   font-size: 1em;
   font-family: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  margin: 0;
-  padding: 0;
 }
 
 body * {
@@ -26,7 +26,7 @@ h5,
 h6,
 strong {
   color: $mainText;
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-weight: 500;
 }
 
@@ -37,7 +37,7 @@ label,
 input,
 textarea {
   color: $secondaryText;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 h1 {
@@ -48,9 +48,11 @@ h2 {
 }
 h3 {
   font-size: 2.8rem;
+  margin-bottom: 2.5rem;
 }
 h4 {
   font-size: 2.4rem;
+  margin-bottom: 2rem;
 }
 h5 {
   font-size: 2rem;
@@ -59,6 +61,10 @@ h6,
 p,
 a {
   font-size: 1.6rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
 }
 
 a {
